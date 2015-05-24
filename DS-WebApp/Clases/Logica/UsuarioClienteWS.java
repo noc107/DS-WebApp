@@ -15,13 +15,15 @@ import java.util.ArrayList;
  */
 public class UsuarioClienteWS implements IUsuario {
 
-    public ArrayList<Usuario> obtenerContactos(){
-       
-        return null;
+    public ArrayList<Usuario> obtenerContactos(Usuario usuario){
+        ArrayList<Usuario> contactos = new ArrayList<Usuario>();
+        Usuario contacto = new Usuario("Nombre","Apellido","Foto","Correo");
+        contactos.add(contacto);
+        return contactos;
     }
 
     @Override
-    public boolean eliminarCuenta() {
+    public boolean eliminarCuenta(Usuario usuario) {
         return true;
     }
     

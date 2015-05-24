@@ -6,10 +6,12 @@
 
 package Logica;
 
+import Entidades.Usuario;
+
 /**
  *
  * @author Oswaldo
  */
 public interface IUsuario {
-    public boolean eliminarCuenta();
+    public boolean eliminarCuenta(Usuario usuario);
 }
