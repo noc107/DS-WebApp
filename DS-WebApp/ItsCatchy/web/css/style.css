@@ -1,0 +1,39 @@
+body{background-color: #ff9300;}
+.container-fluid {background-color: white;
+    border-radius: 0.5em;
+text-align: center;}
+
+img{margin-left: ;
+}
+.perfil{text-align: center;
+margin: 15px;}
+.section{margin-left: 10px;
+margin-right: 10px;}
+#publicate {margin-bottom:  20px;
+margin-top: 20px}
+.glyphicon{font-size: 20px;
+
+    color: #ff9300;
+    
+}
+.btn.btn-foto{background-color: white;
+
+padding:3.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #ff9300;}
+.scroll{overflow-y: scroll;
+height: 75vh;}
+
+.separacion
+{margin-top:20px }
+
+.ubicLogin
+{
+text-align:center;
+margin-top:150px;
+ }
+ 
+ .tamano
+ {width:400px;
+ height:400px; }
