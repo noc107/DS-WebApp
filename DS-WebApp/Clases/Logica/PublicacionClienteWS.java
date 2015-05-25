@@ -10,6 +10,7 @@ import Entidades.Comentario;
 import Entidades.Publicacion;
 import Entidades.Usuario;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -22,26 +23,33 @@ public class PublicacionClienteWS extends Operacion implements IPublicacion{
     }
     
     public ArrayList<Publicacion> obtenerPublicacionesUsuario(Usuario usuario){
-        return null;
+        ArrayList<Publicacion> publicaciones = new ArrayList<Publicacion>();
+        ArrayList<String> comentarios = new ArrayList<String>();
+        Date fechaPublicacion = new Date();
+        Publicacion publicacion = new Publicacion("","","",comentarios,1,1,"","",fechaPublicacion);
+        publicaciones.add(publicacion);
+        return publicaciones;
     }
 
     @Override
-    public boolean publicar() {
+    public boolean publicar(Publicacion publicacion) {
         return true;
     }
 
     @Override
-    public boolean eliminarPublicacion() {
+    public boolean eliminarPublicacion(Publicacion publicacion) {
         return true;
     }
 
     @Override
-    public boolean meGusta() {
+    public boolean meGusta(Publicacion publicacion) {
+        publicacion.meGusta = publicacion.meGusta+1;
         return true;
     }
 
     @Override
-    public boolean noMeGusta() {
+    public boolean noMeGusta(Publicacion publicacion) {
+        publicacion.noMeGusta = publicacion.noMeGusta+1;
         return true;
     }
 }

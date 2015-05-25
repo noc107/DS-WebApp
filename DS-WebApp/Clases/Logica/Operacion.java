@@ -6,11 +6,13 @@
 
 package Logica;
 
+import Entidades.Publicacion;
+
 /**
  *
  * @author Oswaldo
  */
 public abstract class Operacion {
-    public abstract boolean publicar();
-    public abstract boolean eliminarPublicacion();
+    public abstract boolean publicar(Publicacion publicacion);
+    public abstract boolean eliminarPublicacion(Publicacion publicacion);
 }

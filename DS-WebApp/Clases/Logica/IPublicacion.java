@@ -6,11 +6,13 @@
 
 package Logica;
 
+import Entidades.Publicacion;
+
 /**
  *
  * @author Oswaldo
  */
 public interface IPublicacion {
-    public boolean meGusta();
-    public boolean noMeGusta();
+    public boolean meGusta(Publicacion publicacion);
+    public boolean noMeGusta(Publicacion publicacion);
 }
