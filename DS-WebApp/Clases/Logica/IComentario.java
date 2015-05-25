@@ -6,11 +6,13 @@
 
 package Logica;
 
+import Entidades.Comentario;
+
 /**
  *
  * @author Oswaldo
  */
 public interface IComentario {
-    public boolean meGusta();
-    public boolean noMegusta();
+    public boolean meGusta(Comentario comentario);
+    public boolean noMegusta(Comentario comentario);
 }

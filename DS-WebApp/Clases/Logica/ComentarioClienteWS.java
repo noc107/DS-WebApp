@@ -21,22 +21,25 @@ public class ComentarioClienteWS extends Operacion implements IComentario {
     }
 
     @Override
-    public boolean meGusta() {
+    public boolean meGusta(Comentario comentario) {
+        comentario.meGusta = comentario.meGusta+1;
         return true;
     }
 
     @Override
-    public boolean noMegusta() {
+    public boolean noMegusta(Comentario comentario) {
+        comentario.noMeGusta = comentario.noMeGusta+1;
         return true;
     }
+    
 
     @Override
-    public boolean publicar() {
+    public boolean publicar(Publicacion comentario) {
        return true;
     }
 
     @Override
-    public boolean eliminarPublicacion() {
+    public boolean eliminarPublicacion(Publicacion comentario) {
         return true;
     }
     
